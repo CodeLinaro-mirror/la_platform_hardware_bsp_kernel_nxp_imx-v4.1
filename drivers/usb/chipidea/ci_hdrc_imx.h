@@ -45,6 +45,7 @@ struct imx_usbmisc_data {
 	struct usb_charger *charger;
 
 	unsigned int disable_oc:1; /* over current detect disabled */
+	unsigned int pwr_polarity:1; /* polarity of enable vbus from pmic */
 	unsigned int evdo:1; /* set external vbus divider option */
 	/*
 	 * Specifies the delay between powering up the xtal 24MHz clock
